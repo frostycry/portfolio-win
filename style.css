@@ -1,0 +1,34 @@
+*{box-sizing:border-box}
+html,body{margin:0;height:100%;overflow:hidden;font:12px Tahoma,"MS Sans Serif",Arial,sans-serif;user-select:none}
+#root{display:flex;flex-direction:column;height:100vh;background:#008080}
+.desk{position:relative;flex:1;overflow:hidden}
+.icon{position:absolute;width:76px;text-align:center;color:#fff;cursor:default}
+.icon span{display:block;font-size:30px}
+.icon:hover{outline:1px dotted #fff}
+.raised{background:#c0c0c0;border:2px solid;border-color:#fff #404040 #404040 #fff}
+.win{position:absolute;width:340px;padding:2px;background:#c0c0c0;border:2px solid;border-color:#dfdfdf #000 #000 #dfdfdf;box-shadow:1px 1px 0 #808080}
+.title{display:flex;justify-content:space-between;align-items:center;padding:2px 3px;color:#fff;font-weight:bold;background:linear-gradient(90deg,#000080,#1084d0);cursor:move}
+.title button{width:16px;height:14px;padding:0;margin-left:2px;font:bold 10px Arial;line-height:1}
+button{background:#c0c0c0;border:2px solid;border-color:#fff #404040 #404040 #fff;font:12px Tahoma,sans-serif;cursor:pointer}
+button:active{border-color:#404040 #fff #fff #404040}
+.body{margin-top:2px;padding:8px;min-height:120px;background:#c0c0c0}
+.pad{width:100%;height:200px;resize:none;border:2px solid;border-color:#404040 #fff #fff #404040;font:13px "Courier New",monospace}
+.disp{background:#fff;border:2px solid;border-color:#404040 #fff #fff #404040;padding:4px;text-align:right;font:18px "Courier New",monospace;margin-bottom:6px;overflow:hidden}
+.keys{display:grid;grid-template-columns:repeat(4,1fr);gap:4px}
+.keys button{height:30px}
+.widgets{position:absolute;right:12px;top:12px;width:170px;display:flex;flex-direction:column;gap:10px}
+.widget{padding:6px;text-align:center}
+.big{font:bold 24px "Courier New",monospace;color:#000080}
+.bars{display:flex;gap:3px;align-items:flex-end;height:50px;background:#000;padding:3px}
+.bars i{flex:1;background:#0f0}
+.bar{display:flex;align-items:center;gap:4px;height:30px;padding:2px;background:#c0c0c0;border-top:2px solid #fff;position:relative}
+.start-btn{font-weight:bold;height:24px;padding:0 8px}
+.tasks{flex:1;display:flex;gap:3px;overflow:hidden}
+.task{height:24px;min-width:90px;max-width:140px;overflow:hidden;white-space:nowrap;text-align:left}
+.task.on{background:#e8e8e8;border-color:#404040 #fff #fff #404040;font-weight:bold}
+.tray{padding:3px 8px;border:1px solid;border-color:#808080 #fff #fff #808080}
+.start{position:absolute;left:2px;bottom:30px;width:180px;padding:2px;background:#c0c0c0;border:2px solid;border-color:#fff #000 #000 #fff;z-index:99999}
+.start div{padding:8px 10px;cursor:pointer}
+.start div:hover{background:#000080;color:#fff}
+.start hr{margin:2px 0}
+@media(max-width:600px){.widgets{display:none}.win{width:92vw}}

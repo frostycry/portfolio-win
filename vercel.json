@@ -1,0 +1,5 @@
+{
+  "installCommand": "curl https://sh.rustup.rs -sSf | sh -s -- -y --target wasm32-unknown-unknown && curl -L https://github.com/trunk-rs/trunk/releases/latest/download/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xz",
+  "buildCommand": "export PATH=$HOME/.cargo/bin:$PWD:$PATH && trunk build --release",
+  "outputDirectory": "dist"
+}
