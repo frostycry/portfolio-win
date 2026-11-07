@@ -1,5 +1,5 @@
 {
-  "installCommand": "curl https://sh.rustup.rs -sSf | RUSTUP_INIT_SKIP_PATH_CHECK=yes sh -s -- -y --profile minimal --target wasm32-unknown-unknown && curl -L https://github.com/trunk-rs/trunk/releases/latest/download/trunk-x86_64-unknown-linux-gnu.tar.gz | tar -xz",
+  "installCommand": "curl https://sh.rustup.rs -sSf | RUSTUP_INIT_SKIP_PATH_CHECK=yes sh -s -- -y --profile minimal --target wasm32-unknown-unknown && curl -L https://github.com/trunk-rs/trunk/releases/latest/download/trunk-x86_64-unknown-linux-musl.tar.gz | tar -xz",
   "buildCommand": "export PATH=$HOME/.cargo/bin:$PWD:$PATH && rustc --version && trunk build --release",
   "outputDirectory": "dist"
 }
